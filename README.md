@@ -37,6 +37,7 @@ tar -xzvf v2020.075.tar.gz
 make
 ```
 Example of ring.conf:
+```sh
 RingSize 100M
 RingDirectory /root/ringDir
 DataLinkPort 16000
@@ -44,6 +45,7 @@ SeedLinkPort 18000
 ServerID "TDG_ET_HG"
 TransferLogRX 0
 MSeedScan /root/ringScanDir StateFile=/root/ringDir/scan.state InitCurrentState=y
+```
 
 ```sh
 ./ringserver ring.conf
