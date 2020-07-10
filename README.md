@@ -70,7 +70,7 @@ SSH Root İzin
 sudo passwd -d root
 nano /etc/ssh/sshd_config
 	PermitRootLogin yes
-	PermitEmptyPasswords no
+	PermitEmptyPasswords yes
 	UsePAM no
 /etc/init.d/ssh restart	
 ```
